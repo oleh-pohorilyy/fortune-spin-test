@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: greenyellow;
+}
+
+#wheel{
+  position: relative;
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+  border: 20px solid brown;
+  background-color: black;
+
+  overflow: hidden;
+}
+
+#wheel svg.indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  fill: brown;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  border: 8px solid brown;
+  background: radial-gradient(circle at 50%, red, brown);
+}
+
+#button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+#button:active {
+  transform: translate(-50%, -50%) scale(1);
+}
